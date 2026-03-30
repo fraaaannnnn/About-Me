@@ -48,13 +48,15 @@ nav ul {
     display: flex;
     gap: 3rem;
 }
-div {
-    border: solid 1px yellow;
-}
 #profile-pic{
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
+    transition: transform 0.67s ease;
+}
+#profile-pic:hover {
+    transform: rotate(360deg);
+    transition: transform 0.67s ease;
 }
 @media (max-width: 300px) {
     nav {
