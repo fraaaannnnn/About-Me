@@ -146,7 +146,7 @@ footer {
     }
     
 }
-/*resize dell'immagine del profilo*/
+/*resize dell'immagine del profilo, text e footer*/
 @media (max-width: 500px) {
     #profile-pic {
         width: 10rem;
@@ -156,6 +156,9 @@ footer {
     #text-container span {
         font-size: 1.2rem;
         padding: 0.8rem;
+    }
+    footer {
+        font-size: 0.7rem;
     }
 }
 
