@@ -1,4 +1,5 @@
 
+/*roba generale*/
 body {
     color: #66fcf1;
     display: flex;
@@ -14,6 +15,7 @@ body {
     font-family: 'JetBrains Mono', monospace;
     overflow: hidden;
 }
+/*roba della navbar*/
 nav {
     display: flex;
     width: 100%;
@@ -50,6 +52,7 @@ nav ul {
     display: flex;
     gap: 3rem;
 }
+/*roba del footer*/
 footer {
     position: absolute;
     bottom: 0;
@@ -60,6 +63,8 @@ footer {
     color: #66fcf1;
     font-size: 0.9rem;
 }
+/*roba della home page*/
+/*container della propic e della scritta della home page*/
 #container {
     display: flex;
     flex-direction: row;
@@ -69,13 +74,14 @@ footer {
     justify-content: center;
     gap: 12rem;
 }
+/*resize del container */
 @media (max-width: 910px) {
     #container {
         flex-direction: column;
         gap: 1rem;
     }
 }
-
+/*roba della profile pic*/
 #profile-pic{
     width: 15rem;
     height: 15rem;
@@ -86,6 +92,7 @@ footer {
     transform: rotate(360deg);
     transition: transform 0.67s ease;
 }
+/*roba della scritta della home page*/
 #text-container {
     display: flex;
     flex-direction: column;
@@ -97,6 +104,7 @@ footer {
     padding: 1.2rem;
     animation: bounce 4s infinite;
 }
+/*righe della scritta dell'home page*/
 #prima-riga {
     width: auto;
     display: flex;
@@ -125,7 +133,7 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
+/*resize della navbar*/
 @media (max-width: 300px) {
     nav {
         flex-direction: column;
@@ -138,6 +146,7 @@ footer {
     }
     
 }
+/*resize dell'immagine del profilo*/
 @media (max-width: 500px) {
     #profile-pic {
         width: 10rem;
@@ -150,6 +159,7 @@ footer {
     }
 }
 
+/*keyframes per l'animazione della scritta della home page*/
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -165,6 +175,7 @@ footer {
     }
 }
 
+/*animazioni per la scritta della home page*/
 #prima-riga span:nth-child(1) { animation-delay: 0.0s; }
 #prima-riga span:nth-child(2) { animation-delay: 0.1s; }
 #prima-riga span:nth-child(3) { animation-delay: 0.2s; }
@@ -194,3 +205,91 @@ footer {
 #quarta-riga span:nth-child(7) { animation-delay: 2.3s; }
 #quarta-riga span:nth-child(8) { animation-delay: 2.4s; }
 #quarta-riga span:nth-child(9) { animation-delay: 2.5s; }
+
+/*fine roba dell'home page*/
+
+/*roba dell'about me*/
+
+/*container delle card*/
+#card-container {
+    display: flex;
+    height: 30rem;
+    width: 60rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/*roba della card*/
+.card {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background-color: #1f2833;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    flex: 1;
+    transition: flex 0.5s ease, color 0.5s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    background-color: #66fcf1;
+    flex: 3;
+    color: #0b0c10;
+    transition: flex 0.5s ease, color 0.5s ease;
+}
+/*contenuto che appare al hover della card*/
+#card-1:hover::after {
+    content: "Ciao, sono Sannella Francesco, un ragazzo di 21 anni appassionato di programmazione. Attualmente sto studiando Informatica presso l'Università degli Studi di Salerno.";
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+#card-2:hover::after {
+    content: "Ho programmato dal primo anno delle superiori dell'istituto tecnico, iniziando con il C++, Java e Web Development. Durante le superiori ho sviluppato una web app per un Hackaton per la gestione di un servizio di ristorazione, usando html, css, js e php.";
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+#card-3:hover::after {
+    content: "Le mie competenze includono linguaggi di programmazione come C, C++, Java, Python. Per quanto riguarda il web development, ho esperienza con HTML, CSS, JavaScript e PHP. Ho anche una buona conoscenza di database come MySQL.";
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+#card-4:hover::after {
+    content: "Sono un grande amante di videogiochi, se vi piace un videogioco single player, probabilmente l'ho giocato.";
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}   
+ /*resize del container e delle card*/
+@media (max-width: 700px) {
+    #card-container {
+        width: 80%;
+        height: 80%;
+        flex-direction: column;
+    }
+    .card {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+@media (max-width: 300px) {
+    #card-container {
+        width: 50%;
+        height: 50%;
+        flex-direction: column;
+    }
+    .card {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .card:hover::after {
+        font-size: 0.7rem;
+    }
+}
+
+/*fine roba dell'about me*/
