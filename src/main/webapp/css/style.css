@@ -234,7 +234,7 @@ footer {
     justify-content: center;
     flex: 1;
     transition: flex 0.5s ease, color 0.5s ease;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .card:hover {
@@ -247,36 +247,38 @@ footer {
 #card-1:hover::after {
     content: "Ciao, sono Sannella Francesco, un ragazzo di 21 anni appassionato di programmazione. Attualmente sto studiando Informatica presso l'Università degli Studi di Salerno.";
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 #card-2:hover::after {
     content: "Ho programmato dal primo anno delle superiori dell'istituto tecnico, iniziando con il C++, Java e Web Development. Durante le superiori ho sviluppato una web app per un Hackaton per la gestione di un servizio di ristorazione, usando html, css, js e php.";
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 #card-3:hover::after {
     content: "Le mie competenze includono linguaggi di programmazione come C, C++, Java, Python. Per quanto riguarda il web development, ho esperienza con HTML, CSS, JavaScript e PHP. Ho anche una buona conoscenza di database come MySQL.";
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 #card-4:hover::after {
     content: "Sono un grande amante di videogiochi, se vi piace un videogioco single player, probabilmente l'ho giocato.";
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }   
  /*resize del container e delle card*/
 @media (max-width: 700px) {
     #card-container {
         width: 80%;
-        height: 80%;
+        height: 75%;
         flex-direction: column;
     }
     .card {
         width: 80%;
         margin: 0 auto;
+        overflow: scroll;
+        scrollbar-width: none;
     }
     
 }
