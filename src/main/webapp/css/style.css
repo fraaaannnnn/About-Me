@@ -251,7 +251,7 @@ footer {
 }
 
 #card-2:hover::after {
-    content: "Ho programmato dal primo anno delle superiori dell'istituto tecnico, iniziando con il C++, Java e Web Development. Durante le superiori ho sviluppato una web app per un Hackaton per la gestione di un servizio di ristorazione, usando html, css, js e php.";
+    content: "Ho programmato dal primo anno delle superiori iniziando con il C++, Java e Web Development. Durante le superiori ho sviluppato una web app per un Hackaton per la gestione di un servizio di ristorazione, usando html, css, js e php.";
     margin-top: 1rem;
     font-size: 0.8rem;
 }
@@ -277,8 +277,9 @@ footer {
     .card {
         width: 80%;
         margin: 0 auto;
-        overflow: scroll;
-        scrollbar-width: none;
+    }
+    .card:hover::after {
+        font-size: 0.7rem;
     }
     
 }
