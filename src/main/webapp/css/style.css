@@ -310,6 +310,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10rem;
+    position: relative;
 }
 /*immagini */
 .contact-image-icon {
@@ -317,6 +318,7 @@ a {
     height: 10rem;
     transform: translateY(-400%);
     animation: fall 1.5s ease forwards;;
+    position: relative;
 }
 /*immagini e scritte*/
 .cont {
@@ -325,6 +327,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    position: relative;
 }
 /* animazione caduta*/
 @keyframes fall {
@@ -333,15 +336,12 @@ a {
     }
     18% {
         transform: translateY(15%) scaleY(1.05);
-        height: 50%;
     }
     20% {
         transform: translateY(15%) scaleY(0.9);
-        height: 50%;
     }
     40% {
         transform: translateY(-50%) scaleY(1);
-        height: 100%;
     }
     60% {
         transform: translateY(15%) scaleY(0.95);
@@ -349,7 +349,6 @@ a {
     }
     80% {
         transform: translateY(-20%) scaleY(1);
-        height: 10%;
     }
     100% {
         transform: translateY(0%) scaleY(1);
@@ -369,32 +368,40 @@ a {
 }
 
 /*resize per mobile*/
-@media (max-width: 800px) {
+@media (max-width: 800px) { 
     #contact-container {
         flex-direction: column;
-        gap: 5rem;
+        gap: 1rem;
     }
     .contact-image-icon {
         animation: none;
         transform: translateY(15%);        
     }
-}
-
-@media (max-width: 400px) {
-    #contact-container {
-        flex-direction: column;
-        gap: 5rem;
-    }
     #contact-container span{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     #contact-container .contact-image-icon {
-        width: 8rem;
-        height: 8rem;
+        width: 7rem;
+        height: 7rem;
+    }
+}
+    @media (max-width: 300px) {
+        #contact-container {
+        margin-top: 6rem;
+        flex-direction: column;
+        gap: 1rem;
     }
     .contact-image-icon {
         animation: none;
-        transform: translateY(15%);
+        transform: translateY(15%);        
+    }
+    #contact-container span{
+        font-size: 0.7rem;
+    }
+    #contact-container .contact-image-icon {
+        width: 7rem;
     }
 }
+
+
 /*fine roba dei contatti*/
