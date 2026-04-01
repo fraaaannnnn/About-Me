@@ -300,10 +300,12 @@ footer {
 /*fine roba dell'about me*/
 
 /*inizio roba dei contatti*/
-/*container dei contatti*/
+
+/*tolgie la scatola blu del click dell'immagine da mobile*/
 a {
     -webkit-tap-highlight-color: transparent;
 }
+/*container dei contatti*/
 #contact-container {
     display: flex;
     flex-direction: row;
@@ -402,6 +404,5 @@ a {
         width: 7rem;
     }
 }
-
 
 /*fine roba dei contatti*/
