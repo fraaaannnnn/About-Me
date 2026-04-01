@@ -297,5 +297,104 @@ footer {
         font-size: 0.7rem;
     }
 }
-
 /*fine roba dell'about me*/
+
+/*inizio roba dei contatti*/
+/*container dei contatti*/
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+#contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+/*immagini */
+.contact-image-icon {
+    width: 10rem;
+    height: 10rem;
+    transform: translateY(-400%);
+    animation: fall 1.5s ease forwards;;
+}
+/*immagini e scritte*/
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+/* animazione caduta*/
+@keyframes fall {
+    0% {
+        transform: translateY(-400%) scaleY(1);
+    }
+    18% {
+        transform: translateY(15%) scaleY(1.05);
+        height: 50%;
+    }
+    20% {
+        transform: translateY(15%) scaleY(0.9);
+        height: 50%;
+    }
+    40% {
+        transform: translateY(-50%) scaleY(1);
+        height: 100%;
+    }
+    60% {
+        transform: translateY(15%) scaleY(0.95);
+
+    }
+    80% {
+        transform: translateY(-20%) scaleY(1);
+        height: 10%;
+    }
+    100% {
+        transform: translateY(0%) scaleY(1);
+        height: 100%;
+    }
+}
+/*delays animazioni*/
+#instagram {
+    animation-delay: 0.7s;
+}
+
+#linkedin {
+    animation-delay: 1.1s;
+}
+#github {
+    animation-delay: 0.9s;
+}
+
+/*resize per mobile*/
+@media (max-width: 800px) {
+    #contact-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .contact-image-icon {
+        animation: none;
+        transform: translateY(15%);        
+    }
+}
+
+@media (max-width: 400px) {
+    #contact-container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    #contact-container span{
+        font-size: 0.8rem;
+    }
+    #contact-container .contact-image-icon {
+        width: 8rem;
+        height: 8rem;
+    }
+    .contact-image-icon {
+        animation: none;
+        transform: translateY(15%);
+    }
+}
+/*fine roba dei contatti*/
