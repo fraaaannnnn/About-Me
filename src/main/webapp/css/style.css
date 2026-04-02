@@ -318,7 +318,7 @@ a {
 .contact-image-icon {
     width: 10rem;
     height: 10rem;
-    transform: translateY(-400%);
+    transform: translateY(-800%);
     animation: fall 1.5s ease forwards;;
     position: relative;
 }
@@ -334,7 +334,7 @@ a {
 /* animazione caduta*/
 @keyframes fall {
     0% {
-        transform: translateY(-400%) scaleY(1);
+        transform: translateY(-800%) scaleY(1);
     }
     18% {
         transform: translateY(15%) scaleY(1.05);
@@ -370,7 +370,7 @@ a {
 }
 
 /*resize per mobile*/
-@media (max-width: 800px) { 
+@media (max-width: 850px) { 
     #contact-container {
         flex-direction: column;
         gap: 1rem;
